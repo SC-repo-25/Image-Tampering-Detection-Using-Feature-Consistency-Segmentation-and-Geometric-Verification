@@ -1,0 +1,76 @@
+{
+  "input_image": "data/test/tampered/tamp_1.jpg",
+  "preprocessing": {
+    "original_width": 800,
+    "original_height": 600,
+    "original_channels": 3,
+    "processed_width": 800,
+    "processed_height": 600,
+    "was_resized": false,
+    "resize_scale_factor": 1.0,
+    "mean_intensity_before": 98.5911,
+    "mean_intensity_after": 98.5936,
+    "std_intensity_before": 42.7357,
+    "std_intensity_after": 40.2382
+  },
+  "histogram_analysis": {
+    "block_grid_shape": [
+      9,
+      12
+    ],
+    "num_blocks": 108,
+    "num_anomalous_blocks": 3,
+    "anomalous_block_indices": [
+      [
+        3,
+        11
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        8,
+        3
+      ]
+    ],
+    "histogram_anomaly_score": 0.0278
+  },
+  "features": {
+    "detector": "SIFT",
+    "num_keypoints": 1030
+  },
+  "feature_matching": {
+    "num_raw_matches": 1030,
+    "num_filtered_matches": 100,
+    "match_density": 0.0971
+  },
+  "geometric_verification": {
+    "transform_found": true,
+    "num_inliers": 43,
+    "num_outliers": 57,
+    "inlier_ratio": 0.43,
+    "geometric_consistency_score": 0.43
+  },
+  "segmentation": {
+    "num_segments": 348,
+    "num_candidate_segments": 32,
+    "candidate_pixel_fraction": 0.2973
+  },
+  "decision": {
+    "tampering_score": 0.233,
+    "decision": "POTENTIALLY TAMPERED",
+    "components": {
+      "match_density": 0.034,
+      "geometric_consistency": 0.1935,
+      "histogram_anomaly": 0.0056
+    },
+    "evidence_summary": {
+      "num_matched_keypoint_pairs": 100,
+      "ransac_transform_found": true,
+      "ransac_inliers": 43,
+      "ransac_outliers": 57,
+      "anomalous_histogram_blocks": 3
+    }
+  }
+}
