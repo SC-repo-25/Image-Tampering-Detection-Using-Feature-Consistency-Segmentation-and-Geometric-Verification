@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Generated outputs (keep folder, not contents)
+outputs/visualizations/*
+outputs/reports/*
+!outputs/visualizations/.gitkeep
+!outputs/reports/.gitkeep
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
